@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Digital Native | Book</title>
+
+    </head>
+    <body>
+        <div class="container">
+            
+            <form id="detailsForm" onsubmit="decideEmail()" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" onblur="validateName()" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" onblur="validateEmail()" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="card">Card:</label>
+                    <input type="text" onblur="validateCard()" name="card" id="card" placeholder="Enter your card number">
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
